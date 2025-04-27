@@ -7,7 +7,7 @@ const createIndex = (vectors: number[][]): Index => {
     dimensions: vectors[0].length,
     connectivity: 16,
     quantization: usearch.ScalarKind.F32,
-    expansion_add: 32,
+    expansion_add: 128,
     expansion_search: 128,
     multi: false,
   })
@@ -25,7 +25,7 @@ const readIndex = (indexName: string, dimensions: number): Index => {
     dimensions,
     connectivity: 16,
     quantization: usearch.ScalarKind.F32,
-    expansion_add: 32,
+    expansion_add: 128,
     expansion_search: 128,
     multi: false,
   })
